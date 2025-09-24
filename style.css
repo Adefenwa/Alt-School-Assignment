@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+}
+
+/* STYLING FOR TOP SECTION */
+.top {
+  border: 2px solid #000;
+  display: grid;
+  background-color: #a5d8ff;
+  margin-top: 1em;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.p-picture {
+  border-radius: 50%;
+  border: 3px solid #b66899;
+  width: 40%;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+p {
+  line-height: 1.2;
+  text-align: justify;
+  font-size: 1em;
+}
+
+/* STYLING FOR BOTTOM SECTION */
+.bottom {
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+.hobbies,
+.aspirations {
+  background-color: #a5d8ff;
+  padding: 2em;
+  border: 3px solid #b66899;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+li {
+  font-size: 1em;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 450px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* STYLING FOR TOP SECTION */
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-top: 5em;
+    padding: 2em;
+  }
+  .information {
+    width: 70%;
+    justify-self: end;
+  }
+  .profile-picture {
+    justify-self: end;
+  }
+  .p-picture {
+    width: 100%;
+  }
+
+  /* STYLING FOR BOTTOM SECTION */
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .aspirations {
+    padding: 4.25em 10px;
+  }
+}
